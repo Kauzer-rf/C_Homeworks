@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿/*
+Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+
+456 -> 5
+782 -> 8
+918 -> 1
+*/
+Console.Write("Введите 3х значное число: ");
+int num = int.Parse(Console.ReadLine());
+
+int digit2 = num % 100 / 10;
+Console.WriteLine("Вторая цифра вашего числа : " + digit2);
