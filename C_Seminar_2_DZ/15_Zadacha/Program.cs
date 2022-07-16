@@ -7,7 +7,11 @@
 Console.Write("Введите номер дня недели: ");
 int num = int.Parse(Console.ReadLine());
 
-if (num > 5)
+if (num >= 8)
+{
+    Console.WriteLine("Нет такого дня недели, все равно иди работай))");
+}
+else if (num > 5 )
 {
     Console.WriteLine("У вас выходной!)");
 }
