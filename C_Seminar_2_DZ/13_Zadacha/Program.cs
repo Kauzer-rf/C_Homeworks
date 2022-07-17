@@ -14,6 +14,22 @@ if (num < 100)
 }
 else
 {
-int digit3 = (num % 100) - (num % 100 / 10) * 10;
-Console.WriteLine("Третья цифра вашего числа : " + digit3);
+    int digit3 = (num % 100) - (num % 100 / 10) * 10;
+    Console.WriteLine("Третья цифра вашего числа : " + digit3);
 }
+
+/* Решение с циклом
+
+{
+    Console.Write("Число не является 3х значным");
+}
+else
+{
+    while (num > 999)
+    {
+        num /= 10; // num = num / 10
+    }
+    num = num % 10;
+    Console.WriteLine("Третья цифра вашего числа : " + num);
+}
+*/
