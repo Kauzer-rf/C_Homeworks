@@ -10,11 +10,15 @@ int num = int.Parse(Console.ReadLine());
 
 if (num < 100)
 {
-    Console.Write("Число не является 3х значным");
+    Console.Write("Число не является 3х значным!");
+}
+else if (num > 999)
+{
+    Console.Write("Число не является 3х значным!");
 }
 else
 {
-    int digit3 = (num % 100) - (num % 100 / 10) * 10;
+    int digit3 = num % 10;
     Console.WriteLine("Третья цифра вашего числа : " + digit3);
 }
 
