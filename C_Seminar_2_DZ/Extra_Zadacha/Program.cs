@@ -5,12 +5,16 @@
 
 Console.Write("Введите целое положительоне число: ");
 int N = int.Parse(Console.ReadLine());
+int i = 2;
 
+if (N < 0) Console.Write("Число отрицательное");
 
 for (int i = 0; i <= N; i++)
 {
     Console.Write(i + " ");
 }
-if (N < 0) Console.Write("Число отрицательное");
+
+
+
 
 
