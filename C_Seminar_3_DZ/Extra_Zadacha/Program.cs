@@ -16,7 +16,7 @@ while (true)
     {
         Console.Write("Введите радиус круга: ");
         double r = double.Parse(Console.ReadLine());
-        double scircle = 3.14 * Math.Pow(r, 2);
+        double scircle = Math.PI * Math.Pow(r, 2);
         Console.Write("Площадь круга = " + scircle);
         break;
     }

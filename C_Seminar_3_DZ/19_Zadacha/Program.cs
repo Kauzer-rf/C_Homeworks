@@ -15,10 +15,10 @@ while (true)
 {
     Console.Write("Введите пятизначное число: ");
     int number = int.Parse(Console.ReadLine());
-    
-    if (number < 99999 && number > 10000)
+
+    if (number <= 99999 && number >= 10000) // или <100000 и >9999
     {
-        if (number % 10 == number / 10000 % 10 && number / 10 % 10 == number / 1000 % 10)
+        if (number % 10 == number / 10000 && number / 10 % 10 == number / 1000 % 10)
         {
             Console.WriteLine("Число " + number + " ЯВЛЯЕТСЯ палиндромом.");
         }
