@@ -15,7 +15,7 @@ while (true)
     if (type == 1)
     {
         Console.Write("Введите радиус круга: ");
-        int r = int.Parse(Console.ReadLine());
+        double r = double.Parse(Console.ReadLine());
         double scircle = 3.14 * Math.Pow(r, 2);
         Console.Write("Площадь круга = " + scircle);
         break;
@@ -23,23 +23,23 @@ while (true)
     else if (type == 2)
     {
         Console.Write("Введите длину прямоугольника: ");
-        int shir = int.Parse(Console.ReadLine());
+        double shir = double.Parse(Console.ReadLine());
         Console.Write("Введите ширину прямоугольника: ");
-        int dlin = int.Parse(Console.ReadLine());
+        double dlin = double.Parse(Console.ReadLine());
 
         double spram = shir * dlin;
-        Console.Write("Площадь прямоугольника = " + spram);
+        Console.Write("Площадь прямоугольника = " + Math.Round(spram, 2));
         break;
     }
     else if (type == 3)
     {
         Console.Write("Введите 1ый катет треуголника: ");
-        int kat1 = int.Parse(Console.ReadLine());
+        double kat1 = double.Parse(Console.ReadLine());
         Console.Write("Введите 2ой катет треуголника: ");
-        int kat2 = int.Parse(Console.ReadLine());
+        double kat2 = double.Parse(Console.ReadLine());
 
         double stre = 0.5 * (kat1 * kat2);
-        Console.Write("Площадь прямоугольника = " + stre);
+        Console.Write("Площадь прямоугольника = " + Math.Round(stre, 2));
         break;
     }
     else
