@@ -29,5 +29,5 @@ while (true)
         break;
     }
     else
-        Console.WriteLine("Введено неправильно число");
+        Console.WriteLine("Ошибка. Неправильное число.");
 }
