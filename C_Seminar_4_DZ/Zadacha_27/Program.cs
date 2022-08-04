@@ -8,4 +8,19 @@
 9012 -> 12
 
 */ 
-Console.WriteLine("Hello, World!");
+Console.Write("Введите число, содержащее от 2 цифр и более: ");
+int num = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Сумма цифр данного числа = " + GetSum(num));
+
+int GetSum(int number)
+{
+    int Sum = 0;
+    while (number > 0)
+    {
+        Sum = Sum + number % 10;
+        number = number / 10;
+    }
+    return Sum;
+
+}
