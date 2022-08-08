@@ -24,12 +24,13 @@ void PrintArr(double[] arr)
 {
     for (int i = 0; arr.Length > i; i++)
     {
-        System.Console.Write(Math.Round(arr[i], 2) + " ");
+        System.Console.Write(Math.Round(arr[i], 2) + " | ");
     }
     System.Console.WriteLine();
     return;
 }
-
+Console.WriteLine();
+Console.Write("Получился массив: ");
 PrintArr(arr);
 
 double min = arr[0];
@@ -48,8 +49,6 @@ for (int i = 1; arr.Length > i; i++)
     }
 }
 double res = max - min;
+
+Console.WriteLine("\nMax значение массива: " + Math.Round(max, 2) + " \nMin значение массива: " + Math.Round(min, 2) + " \n\nРазница между Max и Min составляет: " + Math.Round(res, 2));
 Console.WriteLine();
-Console.WriteLine("min элемент: " + Math.Round(min, 2));
-Console.WriteLine("max элемент: " + Math.Round(max, 2));
-Console.WriteLine();
-Console.WriteLine("Разница между max и min элементами: " + Math.Round(res, 2));
