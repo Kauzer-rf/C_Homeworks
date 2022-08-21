@@ -7,6 +7,14 @@ int[,] array =
     {5, 9, 2, 3,},
     {8, 4, 2, 4,}
 };
+
+Console.WriteLine("\nЗадан следующий массив: ");
+PrintArray(array);
+
+SortedArray(array);
+Console.WriteLine("\nУпорядоченный по убыванию (построчно) массив: ");
+PrintArray(array);
+
 void PrintArray(int[,]array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
@@ -37,9 +45,3 @@ void SortedArray(int[,]array)
     }
   }
 }
-Console.WriteLine("\nЗадан следующий массив: ");
-PrintArray(array);
-
-SortedArray(array);
-Console.WriteLine("\nУпорядоченный по убыванию (построчно) массив: ");
-PrintArray(array);
