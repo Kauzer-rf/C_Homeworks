@@ -8,7 +8,7 @@
 
 45(1,0,0) 53(1,0,1)
 */
-int[,,] rnd3Darray = new int[3,3,3];
+int[,,] rnd3Darray = new int[2,2,2];
 GetArray(rnd3Darray);
 PrintArray(rnd3Darray);
 
