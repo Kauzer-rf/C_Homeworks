@@ -5,3 +5,22 @@ M = 1; N = 5. -> ""1, 2, 3, 4, 5""
 
 M = 4; N = 8. -> ""4, 6, 7, 8""
 */
+
+Console.Write("\nВведите начальное число M: ");
+int M = int.Parse(Console.ReadLine());
+Console.Write("Введите конечное число N: ");
+int N = int.Parse(Console.ReadLine());
+
+
+void NaturalNum(int start, int end)
+{
+    if (start > end)
+    {
+        return;
+    }
+    Console.Write(start + ", ");
+    start++;
+    NaturalNum(start, end);
+}
+Console.Write("\nОтвет: ");
+NaturalNum(M, N);
